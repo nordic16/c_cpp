@@ -29,7 +29,28 @@ The command we used appends the `~/bin` folder to `PATH`, separating it from the
 Open a new terminal and type the command `c_cpp test` - it should create the project structure for a project called "test"!
 
 
-
-**TODO:
-  Usage.
-**
+# Usage
+Go to the directory where you want your project to be stored and type the command `c_cpp test`, then `ls` - You should see a directory called test.
+<br>c_cpp uses the following project structure:
+```
+Project_name
+  |
+  |---- CMakeLists.txt
+  |
+  |---- include
+  |       |
+  |       |---- Project_name
+  |                 |
+  |                 |---- public_header(s).h
+  ---- src
+  |     |
+  |     |---- private_header(s).h
+  |     |
+  |     |---- code(s).cpp
+  |---- libs
+  |       |
+  |       |---- A
+  |       |
+  |       |---- B
+  |---- tests
+```
