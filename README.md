@@ -3,15 +3,15 @@ A simple shell script to create a regular C++ project file structure.
 
 # Installation.
 
-### Step 1: Determine whether you have a bin folder in your home directory (~)
+### Step 1: Determine whether you have a `bin` folder in your home directory (~)
 A great feature of Linux is that you can make your own commands!
 <br>In order to create your own commands and keep them organized, we need to create a folder in our home directory containing them, and have it added to `PATH` (an environment variable that tells the shell where to look for executable files).
 
-### Step 2: Setting up the bin folder.
+### Step 2: Setting up the `bin` folder.
 If you already have one (you can check by typing the command `ls -a ~ | grep bin`), skip to step 3.
 
-#### Step 2.1 - Creating the bin folder
-You can create the bin folder by typing the following command `mkdir ~/bin`.
+#### Step 2.1 - Creating the `bin` folder
+You can create the `bin` folder by typing the following command `mkdir ~/bin`.
 <br>Now, we need to export the folder to our `PATH` so that all your scripts within ~/bin are recognized as commands. This process depends a lot on the shell you're using, so **BE CAREFUL**.
 
 #### Step 2.2 - Adding the folder to `PATH`
