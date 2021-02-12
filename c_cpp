@@ -1,0 +1,31 @@
+#!/bin/bash
+
+CREATE_BASEDIR() {
+    
+    # Creates the base directory, along with the include folder.
+    # By adding a folder with the project name, we are making the
+    # code more readable:
+    #
+    # Instead of:
+      #include "someHeader.h"
+    # 
+    # The header can be imported by the following statement:
+      #include "PROJECTNAME/someHeader.h"
+   
+    mkdir -p "$NAME/include/$NAME"
+
+    mkdir "$NAME/src"
+    mkdir "$NAME/libs"
+    mkdir "$NAME/tests"
+
+    touch "$NAME/MakeLists.txt"
+}
+
+NAME=$1
+
+CREATE_BASEDIR
+
+
+
+
+
